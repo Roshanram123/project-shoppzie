@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoppize - Registration</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+   
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 login-image">
+                <img   src="login image.png" alt="login image">
+            </div>
+            <div class="col-md-6 login-form d-flex align-items-center">
+                <div class="leftsidebox">
+                    <img src="shoppize logo image.png">
+                    <h2>CREATE AN ACCOUNT.</h2>
+                    <p>Fill in your details to create an account</p>
+                    <form>
+                        <div class="form-group">
+                            <label for="fullname">Full Name</label>
+                            <input type="text" class="form-control" id="fullname" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email" required>
+                        </div>
+                       
+                        <div class="wrapper form-group">
+                            <label for="password">Password</label>
+                            <div class="input-container">
+                                <input type="password" class="form-control" placeholder="Password" id="password" required>
+                                <i class="fa fa-eye" id="eye" onclick="togglePassword('password', 'eye')"></i>
+                            </div>
+                        </div>
+                        <div class="wrapper form-group">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <div class="input-container">
+                                <input type="password" class="form-control" placeholder="Confirm Password" id="confirmPassword" required>
+                                <i class="fa fa-eye" id="eyeConfirm" onclick="togglePassword('confirmPassword', 'eyeConfirm')"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="terms" style="z-index: ;">
+                            <label class="form-check-label" for="terms">By signing up you agree to our <a href="#">terms and conditions</a></label>
+                            
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+                    </form>
+                    <p class="mt-3">Already have an account? <a href="login.html">Log In</a></p>
+                </div>
+            </div>
+            <div class="bottom">
+                <a href="login.html" class="text-primary" style="margin-top-right: 500px;">← Back to Previous Page</a>
+            </div>
+        </div>
+    </div>
+    <script src="register.js"></script>
+</body>
+
+</html>
